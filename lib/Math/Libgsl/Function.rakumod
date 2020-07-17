@@ -1,6 +1,6 @@
 use v6;
 
-unit module Math::Libgsl::Function:ver<0.0.1>:auth<cpan:FRITH>;
+unit module Math::Libgsl::Function:ver<0.0.2>:auth<cpan:FRITH>;
 
 use NativeCall;
 use Math::Libgsl::Raw::Function :ALL;
@@ -4046,7 +4046,7 @@ The excellent C Library manual is available here L<https://www.gnu.org/software/
 
 This module requires the libgsl library to be installed. Please follow the instructions below based on your platform:
 
-=head2 Debian Linux
+=head2 Debian Linux and Ubuntu 20.04
 
 =begin code
 sudo apt install libgsl23 libgsl-dev libgslcblas0
