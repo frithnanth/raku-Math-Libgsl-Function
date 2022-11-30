@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/frithnanth/raku-Math-Libgsl-Function.svg?branch=master)](https://travis-ci.org/frithnanth/raku-Math-Libgsl-Function)
+[![Actions Status](https://github.com/frithnanth/raku-Math-Libgsl-Function/workflows/test/badge.svg)](https://github.com/frithnanth/raku-Math-Libgsl-Function/actions)
 
 NAME
 ====
@@ -8,7 +8,7 @@ Math::Libgsl::Function - An interface to libgsl, the Gnu Scientific Library - Sp
 SYNOPSIS
 ========
 
-```perl6
+```raku
 use Math::Libgsl::Raw::Function :ALL;
 
 use Math::Libgsl::Function :ALL;
@@ -507,11 +507,13 @@ This function computes the Coulomb wave functions Fₗ(η, x), Gₗ₋ₖ(η, x)
 
   * :expG if an overflow occurred, this is the scaling exponent for Gₗ₋ₖ(η, x)
 
-    my %res = coulomb-wave-FG-e(1, 5, 0, 0);
-    say %res<Fval>;
-    say %res<Fpval>;
-    say %res<Gval>;
-    say %res<Gpval>;
+```raku
+my %res = coulomb-wave-FG-e(1, 5, 0, 0);
+say %res<Fval>;
+say %res<Fpval>;
+say %res<Gval>;
+say %res<Gpval>;
+```
 
 ### sub coulomb-wave-F-array(Num(Cool) $lmin, UInt $kmax, Num(Cool) $eta, Num(Cool) $x where * > 0 --> List) is export(:coulomb)
 
@@ -1752,7 +1754,7 @@ Prerequisites
 This module requires the libgsl library to be installed. Please follow the instructions below based on your platform:
 
 Debian Linux and Ubuntu 20.04
-------------
+-----------------------------
 
     sudo apt install libgsl23 libgsl-dev libgslcblas0
 

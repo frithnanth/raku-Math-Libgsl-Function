@@ -1,7 +1,8 @@
 Revision history for Math-Libgsl-Function
 
 {{$NEXT}}
-    - Fix typo in META6.json
+    - Use zef ecosystem
+    - Use Github CI
 
 0.0.1  2020-01-29T11:19:05+01:00
     - Initial version

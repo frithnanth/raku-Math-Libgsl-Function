@@ -1,6 +1,6 @@
 use v6;
 
-unit module Math::Libgsl::Function:ver<0.0.2>:auth<cpan:FRITH>;
+unit module Math::Libgsl::Function:ver<0.0.2>:auth<zef:FRITH>;
 
 use NativeCall;
 use Math::Libgsl::Raw::Function :ALL;
@@ -2571,7 +2571,7 @@ Math::Libgsl::Function - An interface to libgsl, the Gnu Scientific Library - Sp
 
 =head1 SYNOPSIS
 
-=begin code :lang<perl6>
+=begin code :lang<raku>
 
 use Math::Libgsl::Raw::Function :ALL;
 
@@ -2977,7 +2977,7 @@ It returns a List of Pairs (that can be read as a Hash):
 =item :expF       if an overflow occurred, this is the scaling exponent for Fₗ(η, x)
 =item :expG       if an overflow occurred, this is the scaling exponent for Gₗ₋ₖ(η, x)
 
-=begin code
+=begin code :lang<raku>
 my %res = coulomb-wave-FG-e(1, 5, 0, 0);
 say %res<Fval>;
 say %res<Fpval>;
