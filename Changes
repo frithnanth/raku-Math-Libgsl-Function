@@ -1,6 +1,8 @@
 Revision history for Math-Libgsl-Function
 
 {{$NEXT}}
+
+0.0.3  2022-11-30T23:08:20+01:00
     - Use zef ecosystem
     - Use Github CI
 
